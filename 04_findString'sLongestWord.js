@@ -12,9 +12,15 @@ function findLongestWordLength(str) {
     let longestWordIndex = -1;  // the index of longest word
     let longestWordLength = 0;  // the length of longest word
 
-
-    console.log(words);
-    return str.length;
+    for (let i = 0; i < words.length; i++) {
+        const word = words[i];
+        if (word.length > longestWordLength) {
+            longestWordLength = word.length;
+            longestWordIndex = i;
+        }
+    }
+    console.log(longestWordIndex, longestWordLength);
+    return longestWordLength;
 }
   
 findLongestWordLength("The quick brown fox jumped over the lazy dog");
