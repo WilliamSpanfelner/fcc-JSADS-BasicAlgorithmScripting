@@ -12,8 +12,8 @@ formula mentioned above to help convert the Celsius
 temperature to Fahrenheit.
 */
 function convertCtoF(celsius) {
-  let fahrenheit;
+  let fahrenheit = celsius * 9 / 5 + 32;
   return fahrenheit;
 }
 
-convertCtoF(30);
+console.log(convertCtoF(30));
