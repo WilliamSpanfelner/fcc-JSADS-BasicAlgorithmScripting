@@ -16,12 +16,13 @@ to the function.
 */
 function factorialize(num) {
     let result = 1; // result will hold factorial
-    
-    for (let i = 2; i < num + 1; i++) {
-        result *= i;
-        console.log(i, result);     
+    if (num > 1) {
+        for (let i = 2; i < num + 1; i++) {
+            result *= i;
+            console.log(i, result);     
+        }
     }
     return result;
   }
   
-console.log(factorialize(5));
+console.log(factorialize(6));
