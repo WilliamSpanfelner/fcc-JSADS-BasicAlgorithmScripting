@@ -10,9 +10,9 @@ purpose of this challenge, we would like you to use one of
 the JavaScript substring methods instead.
 */
 function confirmEnding(str, target) {
-    let start = str.length - target.length;  // number of chars from the string end to start checking
-    if (str.indexOf(target, start) > -1) {  // see if the target can be found in str
-        const strChars = str.substring(start, start + target.length);
+    let startIndex = str.length - target.length;  // number of chars from the string end to start checking
+    if (str.indexOf(target, startIndex) > -1) {  // see if the target can be found in str
+        const strChars = str.substring(startIndex, startIndex + target.length);
         // console.log(str.substring(start, start + target.length) == target);
         // console.log(start, str.indexOf(target, start));
         return strChars == target;
