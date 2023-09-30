@@ -8,6 +8,8 @@ Your response should be a number.
 
 */
 function findLongestWordLength(str) {
+    let words = str.split(' ');  // create array of words in string
+    console.log(words);
     return str.length;
 }
   
