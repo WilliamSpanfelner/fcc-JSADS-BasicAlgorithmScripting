@@ -6,7 +6,12 @@ Reverse the provided string and return the reversed string.
 For example, "hello" should become "olleh".
 */
 function reverseString(str) {
-    return str;
+    let strReversed = '';
+    for (let i = str.length-1; i > -1; i--) {
+        strReversed += str[i];
+        // console.log(i, strRevered);
+    }
+    return strReversed;
   }
   
-  reverseString("hello");
+console.log(reverseString("hello"));
