@@ -7,7 +7,13 @@ positive number. For the purpose of this challenge, do not
 use the built-in .repeat() method.
 */
 function repeatStringNumTimes(str, num) {
-    return str;
+    let stringRepeated = '';  // Create an empty string to return
+    if (num > 0) {
+        for (let i = 0; i < num; i++) {
+            stringRepeated += str;
+        }
+    }
+    return stringRepeated;
 }
 
-repeatStringNumTimes("abc", 3);
+console.log(repeatStringNumTimes("abc", 3));
