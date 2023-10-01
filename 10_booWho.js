@@ -7,7 +7,7 @@ true or false.
 Boolean primitives are true and false.
 */
 function booWho(bool) {
-    return bool;
+    return bool === true || bool === false ? true : false;
 }
   
-booWho(null);
+console.log(booWho(null));
