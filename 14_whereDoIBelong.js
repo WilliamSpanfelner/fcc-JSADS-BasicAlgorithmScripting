@@ -27,6 +27,10 @@ function getIndexToIns(arr, num) {
                 return index;
             }
         }
+
+        /* If the last element is reached and there is still no result,
+        num must take the place at the end of the array.*/
+        return arr.length
     }
     return arr.length;
 }
