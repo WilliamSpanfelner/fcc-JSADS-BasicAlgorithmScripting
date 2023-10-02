@@ -14,14 +14,24 @@ Lastly, ["Alien", "line"], should return true because all of the
 letters in line are present in Alien.
 */
 function mutation(arr) {
-    for (let index = 0; index < arr[0].length; index++) {
-        const element = arr[0][index].toLowerCase();
-        if (!arr[1].toLowerCase().includes(element)) {
+    for (let index = 0; index < arr[1].length; index++) {
+        const element = arr[1][index].toLowerCase();
+        if (!arr[0].toLowerCase().includes(element)) {
             return false
         }
-        console.log(element, arr[1].toLowerCase().includes(element));
+        console.log(element, arr[0].toLowerCase().includes(element));
     }
     return true
 }
 
-console.log(mutation(["hello", "hey"]));
+const testData = [
+    ["Tiger", "Zebra"],
+    ["Mary", "Aarmy"],
+    ["Mary", "Army"],
+    ["zyxwvutsrqponmlkjihgfedcba", "qrstu"],
+    ["hello", "hey"],
+    ["hello", "Hello"],
+    ["Alien", "line"],
+]
+
+console.log(mutation(testData[0]));
