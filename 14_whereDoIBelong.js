@@ -19,6 +19,14 @@ function getIndexToIns(arr, num) {
     if (arr.length > 0) {
         // Now that there are some elements to sort lets sort them
         const sortedArr = arr.sort((a, b) => a - b);
+
+        // Loop over array to find largest element smaller than num
+        for (let index = 0; index < sortedArr.length; index++) {
+            const element = sortedArr[index];
+            if (num <= element) {
+                return index;
+            }
+        }
     }
     return arr.length;
 }
