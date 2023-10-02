@@ -10,7 +10,13 @@ undefined, and NaN.
 Hint: Try converting each value to a Boolean.
 */
 function bouncer(arr) {
-    return arr;
+    /* filter creates a new array while the Boolean function
+    attempts to convert a value to a boolean primative (
+    https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)
+    */
+    let newArr = arr.filter(item => Boolean(item));
+    console.log(newArr, arr);
+    return newArr;
 }
 
-bouncer([7, "ate", "", false, 9]);
+bouncer([7, "ate", "", false, true, 9]);
