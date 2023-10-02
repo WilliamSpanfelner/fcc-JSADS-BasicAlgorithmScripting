@@ -21,6 +21,7 @@ function mutation(arr) {
         }
         console.log(element, arr[1].toLowerCase().includes(element));
     }
+    return true
 }
 
 console.log(mutation(["hello", "hey"]));
