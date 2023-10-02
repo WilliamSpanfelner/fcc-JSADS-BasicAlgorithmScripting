@@ -17,7 +17,8 @@ than 5 (index 1).
 function getIndexToIns(arr, num) {
     // First test if the array is empty and return zero if so.
     if (arr.length > 0) {
-
+        // Now that there are some elements to sort lets sort them
+        const sortedArr = arr.sort((a, b) => a - b);
     }
     return arr.length;
 }
