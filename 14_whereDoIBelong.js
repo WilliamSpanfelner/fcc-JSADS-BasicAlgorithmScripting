@@ -15,7 +15,11 @@ Likewise, getIndexToIns([20,3,5], 19) should return
 than 5 (index 1).
 */
 function getIndexToIns(arr, num) {
-    return num;
+    // First test if the array is empty and return zero if so.
+    if (arr.length > 0) {
+
+    }
+    return arr.length;
 }
 
-getIndexToIns([40, 60], 50);
+getIndexToIns([20, 3, 5], 19);
