@@ -36,3 +36,20 @@ function getIndexToIns(arr, num) {
 }
 
 getIndexToIns([20, 3, 5], 19);
+
+const testData = [
+    [[1,2,3,4], 1.5],  // 1
+    [[2,5,10], 15],  // 3
+    [[20,3,5], 19],  // 2
+    [[10, 20, 30, 40, 50], 30],  // 2
+    [[10, 20, 30, 40, 50], 35],  // 3
+    [[3, 10, 5], 3],  // 0
+    [[5, 3, 20, 3], 5],  // 2
+    [[2, 20, 10], 19],  // 2
+    [[70, 40, 60], 50],  // 1
+    [[], 1]  // 0
+]
+for (const i in testData) {
+    console.log(getIndexToIns(testData[i][0], testData[i][1]));
+}
+// console.log(getIndexToIns(testData[6][0], testData[6][1]));
