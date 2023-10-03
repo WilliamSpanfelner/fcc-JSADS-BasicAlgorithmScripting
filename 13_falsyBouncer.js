@@ -15,7 +15,7 @@ function bouncer(arr) {
     https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)
     */
     let newArr = arr.filter(item => Boolean(item));
-    console.log(newArr, arr);
+    // console.log(newArr, arr);
     return newArr;
 }
 
