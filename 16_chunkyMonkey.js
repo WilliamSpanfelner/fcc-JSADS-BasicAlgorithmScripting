@@ -15,4 +15,13 @@ function chunkArrayInGroups(arr, size) {
     return arr2D;
 }
 
-console.log(chunkArrayInGroups(["a", "b", "c", "d"], 2));
+const testData = [
+    [[0, 1, 2, 3, 4, 5, 6, 7, 8], 2],
+    [[0, 1, 2, 3, 4, 5, 6, 7, 8], 4],
+    [[0, 1, 2, 3, 4, 5, 6], 3],
+    [[0, 1, 2, 3, 4, 5], 4],
+    [[0, 1, 2, 3, 4, 5], 2],
+    [[0, 1, 2, 3, 4, 5], 3],
+    [["a", "b", "c", "d"], 2],
+];
+console.log(chunkArrayInGroups(testData[0][0], testData[0][1]));
