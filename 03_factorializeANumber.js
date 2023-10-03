@@ -19,7 +19,7 @@ function factorialize(num) {
     if (num > 1) {
         for (let i = 2; i < num + 1; i++) {
             result *= i;
-            console.log(i, result);     
+            // console.log(i, result);     
         }
     }
     return result;
