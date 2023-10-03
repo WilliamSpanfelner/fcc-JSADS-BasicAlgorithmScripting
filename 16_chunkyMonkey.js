@@ -6,7 +6,9 @@ length of size (second argument) and returns them as a two-
 dimensional array.
 */
 function chunkArrayInGroups(arr, size) {
-    return arr;
+    let arr2D = [];
+    
+    return arr2D;
 }
 
-chunkArrayInGroups(["a", "b", "c", "d"], 2);
+console.log(chunkArrayInGroups(["a", "b", "c", "d"], 2));
