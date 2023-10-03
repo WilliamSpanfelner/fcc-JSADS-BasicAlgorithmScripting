@@ -8,7 +8,8 @@ dimensional array.
 function chunkArrayInGroups(arr, size) {
     let arr2D = [];
     for (let index = 0; index < arr.length; index += size) {
-        console.log(index);
+        arr2D.push(arr.slice(index, index + size));
+        console.log(index, arr2D);
     }
     
     return arr2D;
