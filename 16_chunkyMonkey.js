@@ -9,7 +9,7 @@ function chunkArrayInGroups(arr, size) {
     let arr2D = [];
     for (let index = 0; index < arr.length; index += size) {
         arr2D.push(arr.slice(index, index + size));
-        console.log(index, arr2D);
+        // console.log(index, arr2D);
     }
     
     return arr2D;
@@ -24,4 +24,6 @@ const testData = [
     [[0, 1, 2, 3, 4, 5], 3],
     [["a", "b", "c", "d"], 2],
 ];
-console.log(chunkArrayInGroups(testData[0][0], testData[0][1]));
+for (let i = 0; i < testData.length; i++) {
+    console.log(chunkArrayInGroups(testData[i][0], testData[i][1]));
+}
