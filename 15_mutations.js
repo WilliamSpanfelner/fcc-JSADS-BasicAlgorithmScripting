@@ -19,7 +19,7 @@ function mutation(arr) {
         if (!arr[0].toLowerCase().includes(element)) {
             return false
         }
-        console.log(element, arr[0].toLowerCase().includes(element));
+        // console.log(element, arr[0].toLowerCase().includes(element));
     }
     return true
 }
